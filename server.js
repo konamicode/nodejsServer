@@ -14,7 +14,7 @@ const msgType = {
 
 }
 
-const port = process.env.port || 8080;
+const port = process.env.PORT;
 
 server.on("message", function(msg, rinfo) {
     console.log(String(msg));
@@ -53,4 +53,4 @@ server.on("message", function(msg, rinfo) {
 });
 
 server.bind(port);
-console.log("Waiting on ${port}");
+console.log(`Waiting on ${port}`);
