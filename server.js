@@ -53,4 +53,6 @@ server.on("message", function(msg, rinfo) {
 });
 
 server.bind(port);
-console.log(`Waiting on ${port}`);
+app.listen(port, () => {
+    console.log("Server listening on port " + port);
+});
