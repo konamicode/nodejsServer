@@ -14,7 +14,7 @@ const msgType = {
 
 }
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3002;
 
 server.on("message", function(msg, rinfo) {
     console.log(String(msg));
