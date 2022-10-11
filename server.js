@@ -17,6 +17,7 @@ const msgType = {
 const port = process.env.PORT || 3002;
 
 server.on("message", function(msg, rinfo) {
+    server.send("Hello!");
     console.log(String(msg));
     packet = JSON.parse(msg);
     data = packet["data"];
@@ -53,6 +54,4 @@ server.on("message", function(msg, rinfo) {
 });
 
 server.bind(port);
-app.listen(port, () => {
-    console.log("Server listening on port " + port);
-});
+console.info("Listening on port " + (port));
