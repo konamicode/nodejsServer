@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/077f0af6-2262-46bd-94b7-ac692d34848f/AppServices/subscriptions/077f0af6-2262-46bd-94b7-ac692d34848f/resourceGroups/nodejs-lobby_group/providers/Microsoft.Web/sites/nodejs-lobby",
+    "appService.deploySubpath": "."
+}
